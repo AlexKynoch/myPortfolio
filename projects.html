@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Top Navigation Menu -->
+      <section id="intro">
+        <div class="topnav">
+          <a href="index.html" class="active">
+            <img id="logo" src="images/logo.PNG" alt="" />
+          </a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="projects.html">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </section>
+
+      <div class="cards">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  id="quizImage"
+                  class="card-img-top"
+                  src="images/cipher.png"
+                  alt="Card image cap"
+                /><br /><br />
+                <h5 class="card-title">Ceasar Cipher</h5>
+                <p class="card-text">Encodes messages and decodes them.</p>
+                <a
+                  href="https://alexkynoch.github.io/Ceasar-Cipher/"
+                  class="btn btn-primary"
+                  >Ceasar Cipher</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  id="quizImage"
+                  class="card-img-top"
+                  src="images/game.png"
+                  alt="Card image cap"
+                /><br /><br />
+                <h5 class="card-title">Game</h5>
+                <p class="card-text">Text adventure game, click to play.</p>
+                <a href="" class="btn btn-primary">Safe Cracker</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  id="quizImage"
+                  class="card-img-top"
+                  src="images/quiz.png"
+                  alt="Card image cap"
+                />
+                <br /><br />
+                <h5 class="card-title">Quiz</h5>
+                <p class="card-text">Play to see which app is best for you.</p>
+                <a
+                  href="https://alexkynoch.github.io/jsQuizNew/"
+                  class="btn btn-primary"
+                  >App Quiz</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  id="quizImage"
+                  class="card-img-top"
+                  src="images/toast.png"
+                  alt="Card image cap"
+                /><br /><br />
+                <h5 class="card-title">Hobby Website</h5>
+                <p class="card-text">The place for all things toast related.</p>
+                <a
+                  href="https://alexkynoch.github.io/Wk2SimpleWebsite/."
+                  class="btn btn-primary"
+                  >Safe Cracker</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <!-- <div id="moreCards"> -->
+        <!-- <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
