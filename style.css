@@ -148,6 +148,11 @@ body {
   box-shadow: 0px 7px 7px rgb(207, 104, 65);
 }
 
+.cardsAbout {
+  padding: 10 5px 0 5px;
+  box-shadow: 0px 7px 7px rgb(207 104 65);
+}
+
 #quizImage {
   height: 175px;
   border-radius: 5px;
