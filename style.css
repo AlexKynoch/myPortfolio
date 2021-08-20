@@ -21,7 +21,6 @@ body {
   height: 35px;
   width: 90px;
   border-radius: 5px;
-
   justify-content: left;
 }
 
@@ -159,6 +158,17 @@ body {
     opacity 0.4s cubic-bezier(0, 0, 0.4, 1);
 }
 
+img.figure-img {
+  float: right;
+  padding: 10px;
+}
+
+figcaption.figure-caption {
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+}
+
 h5,
 p,
 a {
@@ -177,6 +187,14 @@ a {
   text-align: center;
 }
 
+.cardsAbout {
+  padding: 10px 5px 0 5px;
+}
+
+.btn-primary {
+  border: none;
+}
+
 .btn.btn-primary {
   background-color: rgb(207, 104, 65);
   color: black;
@@ -189,6 +207,25 @@ a {
 .btn.btn-primary:hover {
   background-color: orangered;
   color: white;
+}
+
+.fa {
+  /* padding: 10px; */
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+a.fa.fa-linkedin {
+  margin-top: 20px;
+  padding: 10px;
 }
 
 @keyframes text_reveal_box {
