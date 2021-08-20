@@ -18,7 +18,7 @@ body {
 }
 
 #logo {
-  height: 35px;
+  height: 40px;
   width: 90px;
   border-radius: 5px;
   justify-content: left;
@@ -82,7 +82,7 @@ body {
 .button {
   padding: 10px 30px;
   background-color: transparent;
-  color: white;
+  color: #333;
   border: 2px solid orangered;
   border-radius: 5px;
   font-size: 2rem;
@@ -101,6 +101,7 @@ body {
 .button:hover {
   background-color: orangered;
   text-decoration: none;
+  color: white;
 }
 
 .topnav {
@@ -115,7 +116,7 @@ body {
 
 .topnav a {
   color: white;
-  padding: 3px 16px;
+  padding: 9px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -127,7 +128,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  height: 35px;
+  height: 58px;
 }
 
 .topnav a:hover {
@@ -196,17 +197,19 @@ a {
 }
 
 .btn.btn-primary {
-  background-color: rgb(207, 104, 65);
-  color: black;
+  background-color: orangered;
+  color: white;
   font-weight: bold;
   transition: 0.3s ease;
   transition: background-color, color;
   margin: auto;
+  font-weight: bold;
 }
 
 .btn.btn-primary:hover {
-  background-color: orangered;
-  color: white;
+  background-color: rgb(207, 104, 65);
+  color: black;
+  font-weight: bold;
 }
 
 .fa {
@@ -251,5 +254,21 @@ a.fa.fa-linkedin {
     color: orangered;
     font-weight: 500px;
     text-shadow: 2px 2px #ff0000;
+  }
+}
+
+@media (min-width: 320px) {
+  div.card {
+    margin-bottom: 9px;
+  }
+}
+@media (min-width: 481px) {
+  div.card {
+    margin-bottom: 9px;
+  }
+}
+@media (min-width: 641px) {
+  div.card {
+    margin-bottom: 9px;
   }
 }
