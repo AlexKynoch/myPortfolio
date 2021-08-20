@@ -1,28 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-#container {
-  background-color: rgb(207, 104, 65);
-  /* box-shadow: 0 10 5px rgb(42, 40, 39); */
-  /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.8); */
-  /* box-shadow: 0px 2px 10px 0px rgb(207, 104, 65, 0.75); */
+a {
+  text-decoration: none;
 }
 
 body {
   background: url(images/sky.jpeg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
-  /* overflow: hidden; */
   background-color: black;
   opacity: 0.9;
   font-family: "Montserrat", sans-serif;
 }
-
-/* body {
-  font-family: "Montserrat", sans-serif;
-} */
 
 #logo {
   height: 35px;
@@ -32,55 +25,118 @@ body {
   justify-content: left;
 }
 
-h1 {
-  font-size: 25px;
-  display: flex;
-  justify-content: space-between;
-  color: rgb(254, 78, 1);
-  font-weight: bold;
-  margin: 0;
+#intro h1 {
+  width: fit-content;
+  font-size: 4rem;
+  font-weight: 900;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+  margin: auto;
+  padding: 10px;
 }
 
-/* Style the navigation menu */
+#intro h1:nth-child(1) {
+  animation-delay: 1s;
+}
+
+#intro h1:nth-child(2) {
+  animation-delay: 2s;
+}
+
+#intro h1:nth-child(3) {
+  animation-delay: 3s;
+}
+
+#intro h1:nth-child(4) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 4s;
+}
+
+#intro h1 span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: rgb(252, 30, 30);
+  animation: text_reveal_box 1s ease;
+  animation-delay: 3s;
+}
+
+#intro h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+
+#intro h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+#intro h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+#intro h1:nth-child(4) span {
+  animation-delay: 3.5s;
+}
+
+.button {
+  padding: 10px 30px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition: background-color, color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin: 30px 80px 0 80px;
+}
+
+.button:hover {
+  background-color: orangered;
+  text-decoration: none;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
   position: relative;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
 }
 
-/* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 3px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
 }
 
-/* Style the hamburger menu */
 .topnav a.icon {
   background: rgb(39, 38, 51);
   display: block;
-  /* opacity: 0.5; */
   position: absolute;
   right: 0;
   top: 0;
+  height: 35px;
 }
 
-/* Add a grey background color on mouse-over */
 .topnav a:hover {
-  /* background: rgb(254, 78, 1); */
   background-color: rgb(207, 104, 65);
   color: black;
   font-weight: bold;
 }
 
-/* Style the active link (or home/logo) */
 .active {
   background-color: rgb(39, 38, 51);
   color: white;
@@ -89,14 +145,18 @@ h1 {
 .cards {
   padding: 20px;
   margin-top: 20px;
-  /* background-color: rgb(207, 104, 65); */
   box-shadow: 0px 7px 7px rgb(207, 104, 65);
 }
 
 #quizImage {
   height: 175px;
-  /* width: 150px; */
   border-radius: 5px;
+}
+
+#quizImage:hover {
+  transform: scale(1.4);
+  transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1),
+    opacity 0.4s cubic-bezier(0, 0, 0.4, 1);
 }
 
 h5,
@@ -106,7 +166,6 @@ a {
 }
 
 .card {
-  /* background-color: rgb(0, 30, 40); */
   background: rgb(11, 75, 77);
   border-style: none;
   color: rgb(196, 191, 191);
@@ -122,9 +181,38 @@ a {
   background-color: rgb(207, 104, 65);
   color: black;
   font-weight: bold;
+  transition: 0.3s ease;
+  transition: background-color, color;
+  margin: auto;
 }
 
 .btn.btn-primary:hover {
   background-color: orangered;
   color: white;
+}
+
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+    color: orangered;
+    text-shadow: 2px 2px #ff0000;
+  }
+}
+
+@keyframes text_reveal_name {
+  100% {
+    color: orangered;
+    font-weight: 500px;
+    text-shadow: 2px 2px #ff0000;
+  }
 }
